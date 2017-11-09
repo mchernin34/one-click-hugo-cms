@@ -1,0 +1,90 @@
+{
+  "name": "mchernin34/one-click-hugo-cms",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/mchernin34/one-click-hugo-cms",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/victor-hugo",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "one-click-hugo-cms",
+      "subhead": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "one-click-hugo-cms: Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "mchernin34",
+          "repo": "one-click-hugo-cms"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Hugo template for Netlify CMS with Netlify Identity</h1>\n<p>This is a small business template built with <a href=\"https://github.com/netlify/victor-hugo\">Victor Hugo</a> and <a href=\"https://github.com/netlify/netlify-cms\">Netlify CMS</a>, designed and developed by <a href=\"http://www.darindimitroff.com/\">Darin Dimitroff</a>, <a href=\"https://www.spacefarm.digital\">spacefarm.digital</a>.</p>\n<h2>Getting started</h2>\n<p>Use our deploy button to get your own copy of the repository. </p>\n<p><a href=\"https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/one-click-hugo-cms&amp;stack=cms\"><img src=\"https://www.netlify.com/img/deploy/button.svg\"></a></p>\n<p>This will setup everything needed for running the CMS:</p>\n<ul>\n<li>A new repository in your GitHub account with the code</li>\n<li>Full Continuous Deployment to Netlify&apos;s global CDN network</li>\n<li>Control users and access with Netlify Identity</li>\n<li>Manage content with Netlify CMS</li>\n</ul>\n<p>Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click &quot;Invite&quot; and send yourself an invite.</p>\n<p>Now you&apos;re all set, and you can start editing content!</p>\n<h2>Local Development</h2>\n<p>Clone this repository, and run <code>yarn</code> or <code>npm install</code> from the new folder to install all required dependencies.</p>\n<p>Then start the development server with <code>yarn start</code> or <code>npm start</code>.</p>\n<h2>Layouts</h2>\n<p>The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the <code>site/layouts/partials</code> folder for all available partials.</p>\n<p>Use Hugo&#x2019;s <code>dict</code> functionality to feed content into partials and avoid repeating yourself and creating discrepancies.</p>\n<h2>CSS</h2>\n<p>The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to <code>src/css/imports/_variables.css</code> where most of the important global variables like colors and spacing are stored.</p>\n<h2>SVG</h2>\n<p>All SVG icons stored in <code>site/static/img/icons</code> are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called <code>svg.html</code>. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the <code>&lt;use&gt;</code> tag like so:</p>\n<pre>&lt;svg width=<span class=\"hljs-string\">&quot;16px&quot;</span> height=<span class=\"hljs-string\">&quot;16px&quot;</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span></span>=<span class=\"hljs-string\">&quot;db&quot;</span>&gt;\n  <span class=\"xml\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">use</span> <span class=\"hljs-attr\">xlink:href</span>=<span class=\"hljs-string\">&quot;#SVG-ID&quot;</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">use</span>&gt;</span></span>\n&lt;<span class=\"hljs-regexp\">/svg&gt;</span></pre>"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/mchernin34/one-click-hugo-cms",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/mchernin34",
+          "text": "mchernin34"
+        }
+      ]
+    }
+  ]
+}
